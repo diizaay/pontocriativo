@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Palette, Code, Smartphone, Sparkles, Lightbulb, Wrench, ArrowRight } from 'lucide-react';
-import { mockData } from '../data/mock';
+import { getServices } from '../services/api';
 
 const Services = () => {
-  const { services } = mockData;
+  const [services, setServices] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchServices = async () => {
+      try {
+        setLoading(true);
+        const data = await getServices();
+        setServices(data);
+      } catch (error) {
+        console.error('Error fetching services:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchServices();
+  }, []);
 
   const iconMap = {
     Palette,
