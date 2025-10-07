@@ -28,6 +28,19 @@ const Projects = () => {
     ? projects 
     : projects.filter((p) => p.category === filter);
 
+  if (loading) {
+    return (
+      <section id="projects" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#3BB1E0]"></div>
+            <p className="mt-4 text-gray-600">Carregando projetos...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="projects" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
