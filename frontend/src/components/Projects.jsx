@@ -1,10 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ExternalLink, Tag } from 'lucide-react';
-import { mockData } from '../data/mock';
+import { getProjects } from '../services/api';
 
 const Projects = () => {
-  const { projects } = mockData;
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('Todos');
+
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        setLoading(true);
+        const data = await getProjects();
+        setProjects(data);
+      } catch (error) {
+        console.error('Error fetching projects:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProjects();
+  }, []);
 
   const categories = ['Todos', ...new Set(projects.map((p) => p.category))];
   const filteredProjects = filter === 'Todos' 
