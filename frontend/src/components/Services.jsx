@@ -31,6 +31,19 @@ const Services = () => {
     Wrench,
   };
 
+  if (loading) {
+    return (
+      <section id="services" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#3BB1E0]"></div>
+            <p className="mt-4 text-gray-600">Carregando serviços...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="services" className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
