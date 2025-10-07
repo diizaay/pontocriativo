@@ -29,12 +29,19 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Mock submission - will be replaced with actual API call
-    setTimeout(() => {
+    try {
+      // Import API function
+      const { submitContact } = await import('../services/api');
+      
+      // Submit to backend
+      const response = await submitContact(formData);
+      
       toast({
         title: 'Mensagem enviada com sucesso!',
-        description: 'Entraremos em contato em breve.',
+        description: response.message || 'Entraremos em contato em breve.',
       });
+      
+      // Reset form
       setFormData({
         name: '',
         email: '',
@@ -42,8 +49,16 @@ const Contact = () => {
         company: '',
         message: ''
       });
+    } catch (error) {
+      console.error('Error submitting contact:', error);
+      toast({
+        title: 'Erro ao enviar mensagem',
+        description: 'Tente novamente mais tarde.',
+        variant: 'destructive'
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
