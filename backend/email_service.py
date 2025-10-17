@@ -2,6 +2,11 @@ from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from pydantic_settings import BaseSettings
 from pydantic import EmailStr
 from typing import List
+import os
+print("⚙️ Variáveis de ambiente carregadas:")
+for key in ["MONGO_URL", "DB_NAME", "MAIL_FROM", "ADMIN_NOTIFICATION_EMAIL"]:
+    print(f"{key} = {os.getenv(key)}")
+
 
 
 # ✅ Modelo que inclui todas as variáveis do seu .env
@@ -69,3 +74,4 @@ async def send_contact_notification(contact_data: dict):
     fm = FastMail(conf)
     await fm.send_message(msg)
     print(f"📧 Email enviado com sucesso para {settings.ADMIN_NOTIFICATION_EMAIL}")
+
