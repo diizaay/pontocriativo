@@ -1,19 +1,12 @@
-# 📦 Dependências principais do backend
-fastapi==0.115.5
+fastapi==0.110.1
 uvicorn
 
-# 📩 Envio de e-mails
 fastapi-mail==1.5.6
 aiosmtplib
 email-validator
 
-# 🗄️ Banco de dados MongoDB
 motor
-
-# ⚙️ Configuração e variáveis de ambiente
 python-dotenv
 pydantic==2.11.9
 pydantic-settings
-
-# 🧰 Outras libs úteis
 requests
