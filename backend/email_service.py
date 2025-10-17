@@ -2,6 +2,18 @@ from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from dotenv import load_dotenv
 import os
 import logging
+from pydantic_settings import BaseSettings
+
+class Settings(BaseSettings):
+    MAIL_USERNAME: str
+    MAIL_PASSWORD: str
+    MAIL_FROM: str
+    MAIL_PORT: int
+    MAIL_SERVER: str
+    MAIL_FROM_NAME: str
+    MAIL_STARTTLS: bool = True
+    MAIL_SSL_TLS: bool = False
+
 
 logger = logging.getLogger(__name__)
 load_dotenv()
@@ -50,3 +62,4 @@ async def send_contact_notification(contact_data: dict):
         logger.info("✅ [DEBUG] E-mail enviado com sucesso.")
     except Exception as e:
         logger.error(f"❌ [DEBUG] Falha ao enviar e-mail: {e}")
+
