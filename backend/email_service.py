@@ -1,12 +1,12 @@
-import config_mail 
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from pydantic_settings import BaseSettings
 from pydantic import EmailStr
 from typing import List
 
 
-# ✅ Configurações de e-mail via variáveis de ambiente
+# ✅ Modelo que inclui todas as variáveis do seu .env
 class Settings(BaseSettings):
+    # SMTP / E-mail
     MAIL_USERNAME: str
     MAIL_PASSWORD: str
     MAIL_FROM: EmailStr
@@ -17,13 +17,22 @@ class Settings(BaseSettings):
     MAIL_SSL_TLS: bool = False
     USE_CREDENTIALS: bool = True
 
+    # Banco de dados
+    MONGO_URL: str
+    DB_NAME: str
+
+    # Notificação
+    ADMIN_NOTIFICATION_EMAIL: EmailStr
+
     class Config:
-        env_file = ".env"  # opcional, se estiver usando .env localmente
+        env_file = ".env"
+        extra = "ignore"  # ignora variáveis extras não declaradas (por segurança)
 
 
+# 🔐 Carrega as configurações
 settings = Settings()
 
-# ✅ Configuração da conexão com o servidor SMTP (Mailtrap)
+# 📬 Configuração do servidor de e-mail (Mailtrap)
 conf = ConnectionConfig(
     MAIL_USERNAME=settings.MAIL_USERNAME,
     MAIL_PASSWORD=settings.MAIL_PASSWORD,
@@ -37,28 +46,26 @@ conf = ConnectionConfig(
 )
 
 
-# 📩 Função para enviar notificação ao receber contato
-async def send_contact_notification(name: str, email: str, phone: str, company: str, message: str):
-    subject = f"📬 Novo contato no site - {name}"
+# 📩 Função para enviar notificação quando receber um contato
+async def send_contact_notification(contact_data: dict):
+    subject = f"📬 Novo contato no site - {contact_data.get('name')}"
 
-    # Corpo do e-mail (HTML)
     html_body = f"""
-    <h2>Novo contato recebido no site</h2>
-    <p><strong>Nome:</strong> {name}</p>
-    <p><strong>Email:</strong> {email}</p>
-    <p><strong>Telefone:</strong> {phone}</p>
-    <p><strong>Empresa:</strong> {company}</p>
-    <p><strong>Mensagem:</strong> {message}</p>
+    <h2>📨 Novo contato recebido no site</h2>
+    <p><strong>Nome:</strong> {contact_data.get('name')}</p>
+    <p><strong>Email:</strong> {contact_data.get('email')}</p>
+    <p><strong>Telefone:</strong> {contact_data.get('phone')}</p>
+    <p><strong>Empresa:</strong> {contact_data.get('company')}</p>
+    <p><strong>Mensagem:</strong> {contact_data.get('message')}</p>
     """
 
     msg = MessageSchema(
         subject=subject,
-        recipients=[settings.MAIL_FROM],  # envia para seu próprio e-mail
+        recipients=[settings.ADMIN_NOTIFICATION_EMAIL],  # 👈 envia para você
         body=html_body,
         subtype="html",
     )
 
     fm = FastMail(conf)
     await fm.send_message(msg)
-    print(f"📧 Email de notificação enviado com sucesso para {settings.MAIL_FROM}")
-
+    print(f"📧 Email enviado com sucesso para {settings.ADMIN_NOTIFICATION_EMAIL}")
