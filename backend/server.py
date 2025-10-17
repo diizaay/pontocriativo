@@ -84,7 +84,7 @@ async def submit_contact(contact_data: ContactCreate, request: Request):
         logger.info(f"💾 Contato salvo no banco: {contact.name} ({contact.email})")
 
         # envia notificação por e-mail
-         logger.info("🚀 Chamando função de envio de e-mail...")
+        logger.info("🚀 Chamando função de envio de e-mail...")
         await send_contact_notification(contact.dict())
         logger.info("✅ E-mail enviado com sucesso.")
 
