@@ -63,6 +63,8 @@ starlette==0.37.2
 typer==0.19.2
 typing-inspection==0.4.1
 typing_extensions==4.15.0
+fastapi-mail
+
 tzdata==2025.2
 urllib3==2.5.0
 uvicorn==0.25.0
