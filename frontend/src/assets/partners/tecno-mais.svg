@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 72" fill="none">
+  <rect width="180" height="72" rx="20" fill="#102C44"/>
+  <rect x="44" y="22" width="52" height="28" rx="8" stroke="#4D9BFF" stroke-width="5"/>
+  <path d="M56 36h20M66 26v20" stroke="#4D9BFF" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="104" cy="36" r="6" fill="#4D9BFF"/>
+  <text x="118" y="34" fill="#FFFFFF" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing=".24em">TECNO +</text>
+  <text x="118" y="52" fill="#7CC0FF" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" letter-spacing=".34em">SOLUÇÕES DIGITAIS</text>
+</svg>

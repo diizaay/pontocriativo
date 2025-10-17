@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 72" fill="none">
+  <rect width="180" height="72" rx="20" fill="#0B3D2E"/>
+  <path d="M50 45c12-4 21-15 22-27-12 1-23 10-27 22-3 8-1 14 5 15 5 0 10-3 15-8" stroke="#9FE3B1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58 22c4 5 6 10 6 15 0 8-4 14-10 18" stroke="#9FE3B1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="90" y="30" fill="#E7FFF0" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing=".08em">PONTO</text>
+  <text x="90" y="49" fill="#9FE3B1" font-family="Arial, sans-serif" font-size="15" font-weight="600" letter-spacing=".12em">ECOLÓGICO</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 72" fill="none">
+  <rect width="180" height="72" rx="20" fill="#3F1E28"/>
+  <path d="M46 26c4-6 12-10 21-10 9 0 16 4 20 9" stroke="#F7D1B1" stroke-width="3" stroke-linecap="round"/>
+  <path d="M40 44c4 7 12 12 21 12 9 0 17-4 22-10" stroke="#F7D1B1" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="66" cy="36" r="6" fill="#F9B27C"/>
+  <text x="95" y="34" fill="#FCE6D2" font-family="'Georgia', serif" font-size="18" font-weight="600" letter-spacing=".12em">ESSÊNCIA</text>
+  <text x="95" y="52" fill="#F9B27C" font-family="'Georgia', serif" font-size="14" letter-spacing=".28em">ARTESANAL</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 72" fill="none">
+  <rect width="180" height="72" rx="20" fill="#111827"/>
+  <circle cx="54" cy="36" r="19" stroke="#F97316" stroke-width="6"/>
+  <path d="M54 22v15l10 10" stroke="#F97316" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="90" y="34" fill="#FFFFFF" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="20" font-weight="700" letter-spacing=".16em">NA HORA</text>
+  <text x="90" y="52" fill="#F97316" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing=".42em">SERVIÇOS RÁPIDOS</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroTechGradient" x1="64" y1="48" x2="452" y2="472" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A4C98"/>
+      <stop offset="0.7" stop-color="#0B5EC1"/>
+      <stop offset="1" stop-color="#44BEEE"/>
+    </linearGradient>
+    <linearGradient id="heroTechGlow" x1="128" y1="104" x2="392" y2="384" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#44BEEE" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#9BE7FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="heroTechShadow" x="40" y="36" width="440" height="448" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="24" result="blur"/>
+    </filter>
+  </defs>
+  <rect x="84" y="80" width="352" height="360" rx="96" fill="url(#heroTechGradient)" opacity="0.85"/>
+  <rect x="64" y="60" width="352" height="360" rx="96" fill="url(#heroTechGlow)" opacity="0.55"/>
+  <rect x="104" y="108" width="312" height="304" rx="36" stroke="#E7F6FF" stroke-opacity="0.6" stroke-width="2.4"/>
+  <g opacity="0.9" stroke="#E3F1FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M168 188H336C356.539 188 372 203.461 372 224C372 244.539 356.539 260 336 260H284"/>
+    <path d="M228 260H168C147.461 260 132 275.461 132 296C132 316.539 147.461 332 168 332H246"/>
+    <path d="M284 260C304.539 260 320 275.461 320 296C320 316.539 304.539 332 284 332H268"/>
+  </g>
+  <g stroke="#44BEEE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.8">
+    <path d="M204 152V188"/>
+    <path d="M264 152V220"/>
+    <path d="M324 152V188"/>
+    <path d="M204 332V364"/>
+    <path d="M264 332V364"/>
+    <path d="M324 332V364"/>
+  </g>
+  <g>
+    <circle cx="204" cy="140" r="12" fill="#44BEEE" opacity="0.75"/>
+    <circle cx="264" cy="136" r="16" fill="#0A4C98" opacity="0.9"/>
+    <circle cx="324" cy="140" r="12" fill="#44BEEE" opacity="0.75"/>
+    <circle cx="204" cy="376" r="12" fill="#44BEEE" opacity="0.75"/>
+    <circle cx="264" cy="380" r="16" fill="#0A4C98" opacity="0.9"/>
+    <circle cx="324" cy="376" r="12" fill="#44BEEE" opacity="0.75"/>
+  </g>
+  <g filter="url(#heroTechShadow)" opacity="0.45">
+    <rect x="112" y="116" width="288" height="288" rx="64" fill="#0A4C98"/>
+  </g>
+  <rect x="132" y="136" width="248" height="248" rx="48" fill="#0F57A9" opacity="0.65"/>
+  <g opacity="0.85" stroke="#A7EAFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M184 200L208 176H260"/>
+    <path d="M316 248L340 224"/>
+    <path d="M212 296L236 272H284L308 296"/>
+    <path d="M176 248H220L244 224"/>
+  </g>
+  <circle cx="208" cy="248" r="20" fill="#44BEEE" opacity="0.85"/>
+  <circle cx="312" cy="208" r="26" fill="#0A4C98" opacity="0.85"/>
+  <circle cx="272" cy="292" r="22" fill="#44BEEE" opacity="0.8"/>
+</svg>

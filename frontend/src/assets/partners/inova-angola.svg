@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 72" fill="none">
+  <rect width="180" height="72" rx="20" fill="#1D1D42"/>
+  <path d="M48 25c0-7 6-13 13-13s13 6 13 13c0 5-3 10-8 12l8 18h-26l8-18c-5-2-8-7-8-12Z" fill="#5AF2CF"/>
+  <circle cx="61" cy="24" r="6" fill="#1D1D42"/>
+  <text x="92" y="32" fill="#FFFFFF" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing=".18em">INOVA ANGOLA</text>
+  <text x="92" y="51" fill="#5AF2CF" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" letter-spacing=".34em">TECNOLOGIA E FUTURO</text>
+</svg>

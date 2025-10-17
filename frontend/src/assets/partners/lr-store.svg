@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 72" fill="none">
+  <rect width="180" height="72" rx="20" fill="#0B417A"/>
+  <path d="M46 22h18c8 0 13 5 13 12s-5 12-13 12h-9v14" stroke="#9CD2FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M84 22h13c7 0 11 4 11 9 0 4-2 7-6 8l13 21" stroke="#9CD2FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="34" fill="#E4F3FF" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing=".28em">LR STORE</text>
+  <text x="100" y="52" fill="#9CD2FF" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="12" letter-spacing=".36em">DIGITAL RETAIL</text>
+</svg>
