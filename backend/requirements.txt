@@ -1,7 +1,7 @@
 fastapi==0.110.1
 uvicorn
 
-fastapi-mail==1.5.6
+fastapi-mail
 aiosmtplib
 email-validator
 
