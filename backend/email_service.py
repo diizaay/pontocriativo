@@ -1,65 +1,62 @@
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
-from dotenv import load_dotenv
-import os
-import logging
 from pydantic_settings import BaseSettings
+from pydantic import EmailStr
+from typing import List
 
+
+# ✅ Configurações de e-mail via variáveis de ambiente
 class Settings(BaseSettings):
     MAIL_USERNAME: str
     MAIL_PASSWORD: str
-    MAIL_FROM: str
+    MAIL_FROM: EmailStr
     MAIL_PORT: int
     MAIL_SERVER: str
-    MAIL_FROM_NAME: str
+    MAIL_FROM_NAME: str = "Ponto Criativo"
     MAIL_STARTTLS: bool = True
     MAIL_SSL_TLS: bool = False
+    USE_CREDENTIALS: bool = True
+
+    class Config:
+        env_file = ".env"  # opcional, se estiver usando .env localmente
 
 
-logger = logging.getLogger(__name__)
-load_dotenv()
+settings = Settings()
 
+# ✅ Configuração da conexão com o servidor SMTP (Mailtrap)
 conf = ConnectionConfig(
-    MAIL_USERNAME=os.getenv("MAIL_USERNAME"),
-    MAIL_PASSWORD=os.getenv("MAIL_PASSWORD"),
-    MAIL_FROM=os.getenv("MAIL_FROM"),
-    MAIL_PORT=int(os.getenv("MAIL_PORT")),
-    MAIL_SERVER=os.getenv("MAIL_SERVER"),
-    MAIL_FROM_NAME=os.getenv("MAIL_FROM_NAME"),
-    MAIL_STARTTLS=os.getenv("MAIL_STARTTLS") == "True",
-    MAIL_SSL_TLS=os.getenv("MAIL_SSL_TLS") == "True",
-    USE_CREDENTIALS=True,
+    MAIL_USERNAME=settings.MAIL_USERNAME,
+    MAIL_PASSWORD=settings.MAIL_PASSWORD,
+    MAIL_FROM=settings.MAIL_FROM,
+    MAIL_PORT=settings.MAIL_PORT,
+    MAIL_SERVER=settings.MAIL_SERVER,
+    MAIL_FROM_NAME=settings.MAIL_FROM_NAME,
+    MAIL_STARTTLS=settings.MAIL_STARTTLS,
+    MAIL_SSL_TLS=settings.MAIL_SSL_TLS,
+    USE_CREDENTIALS=settings.USE_CREDENTIALS,
 )
 
-async def send_contact_notification(contact_data: dict):
-    logger.info("📧 [DEBUG] Entrou em send_contact_notification")
-    logger.info(f"📧 Enviando e-mail para: {os.getenv('ADMIN_NOTIFICATION_EMAIL')}")
-    try:
-        subject = f"📩 Novo contato de {contact_data['name']}"
-        recipients = [os.getenv("ADMIN_NOTIFICATION_EMAIL")]
 
-        body = f"""
-        📬 Nova mensagem recebida pelo formulário de contato:
+# 📩 Função para enviar notificação ao receber contato
+async def send_contact_notification(name: str, email: str, phone: str, company: str, message: str):
+    subject = f"📬 Novo contato no site - {name}"
 
-        Nome: {contact_data['name']}
-        Email: {contact_data['email']}
-        Telefone: {contact_data.get('phone', 'Não informado')}
-        Empresa: {contact_data.get('company', 'Não informada')}
-        Mensagem:
-        {contact_data['message']}
+    # Corpo do e-mail (HTML)
+    html_body = f"""
+    <h2>Novo contato recebido no site</h2>
+    <p><strong>Nome:</strong> {name}</p>
+    <p><strong>Email:</strong> {email}</p>
+    <p><strong>Telefone:</strong> {phone}</p>
+    <p><strong>Empresa:</strong> {company}</p>
+    <p><strong>Mensagem:</strong> {message}</p>
+    """
 
-        📅 Enviado automaticamente pelo sistema.
-        """
+    msg = MessageSchema(
+        subject=subject,
+        recipients=[settings.MAIL_FROM],  # envia para seu próprio e-mail
+        body=html_body,
+        subtype="html",
+    )
 
-        message = MessageSchema(
-            subject=subject,
-            recipients=recipients,
-            body=body,
-            subtype="plain"
-        )
-
-        fm = FastMail(conf)
-        await fm.send_message(message)
-        logger.info("✅ [DEBUG] E-mail enviado com sucesso.")
-    except Exception as e:
-        logger.error(f"❌ [DEBUG] Falha ao enviar e-mail: {e}")
-
+    fm = FastMail(conf)
+    await fm.send_message(msg)
+    print(f"📧 Email de notificação enviado com sucesso para {settings.MAIL_FROM}")
