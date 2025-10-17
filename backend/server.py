@@ -85,7 +85,15 @@ async def submit_contact(contact_data: ContactCreate, request: Request):
 
         # envia notificação por e-mail
         logger.info("🚀 Chamando função de envio de e-mail...")
-        await send_contact_notification(contact.dict())
+        await send_contact_notification(
+            await send_contact_notification(
+        contact.name,
+        contact.email,
+        contact.phone or "",
+        contact.company or "",
+        contact.message
+        )
+
         logger.info("✅ E-mail enviado com sucesso.")
 
         return {
