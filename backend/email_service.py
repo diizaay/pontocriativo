@@ -1,3 +1,4 @@
+import config_mail 
 from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from pydantic_settings import BaseSettings
 from pydantic import EmailStr
@@ -60,3 +61,4 @@ async def send_contact_notification(name: str, email: str, phone: str, company: 
     fm = FastMail(conf)
     await fm.send_message(msg)
     print(f"📧 Email de notificação enviado com sucesso para {settings.MAIL_FROM}")
+
