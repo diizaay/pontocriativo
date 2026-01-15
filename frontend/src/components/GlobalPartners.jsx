@@ -24,22 +24,15 @@ const GlobalPartners = () => {
   return (
     <section
       data-nav-theme="blue"
-      className="relative overflow-hidden bg-[#004da3] py-24 text-white md:flex md:min-h-screen md:items-center"
+      className="relative overflow-hidden bg-[#016477] py-24 text-white md:flex md:min-h-screen md:items-center"
     >
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-white/15 via-transparent to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white/12 via-transparent to-transparent" />
-        <div className="absolute left-1/5 top-12 h-52 w-52 rounded-full bg-[#3aa9ff]/25 blur-3xl" />
-        <div className="absolute right-1/4 bottom-16 h-48 w-48 rounded-full bg-[#1e7de6]/25 blur-3xl" />
-      </div>
-
       <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
         <Reveal className="space-y-4 text-center md:text-left">
           <span className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-white/70 backdrop-blur">
             Parcerias globais
           </span>
           <h2 className="max-w-[720px] text-3xl font-semibold leading-[1.32] tracking-[-0.02em] text-white sm:text-4xl">
-            Mais de 30 marcas confiam no Ponto Criativo para lançar e evoluir experiências digitais de alto impacto.
+            Mais de 30 marcas confiam na CriaTec para lançar e evoluir experiências digitais de alto impacto.
           </h2>
         </Reveal>
 

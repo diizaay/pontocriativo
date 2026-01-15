@@ -76,20 +76,15 @@ const HomeProjectsStack = () => {
     <section
       id="featured-projects"
       data-nav-theme="white"
-      className="relative overflow-hidden bg-gradient-to-b from-white via-[#f4f8ff] to-white py-24 text-[#0f1e3b] sm:py-32"
+      className="relative overflow-hidden bg-white py-24 text-[#0f1e3b] sm:py-32"
     >
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-x-0 top-0 h-64 bg-gradient-to-b from-[#d9e9ff]/40 via-transparent to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-white to-transparent" />
-      </div>
-
       <div className="relative mx-auto flex w-full max-w-5xl flex-col gap-16 px-4 sm:px-6 lg:px-8">
         <Reveal className="space-y-6 text-left md:text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.36em] text-[#6c8ac0]">
             Projetos em destaque
           </p>
           <h2 className="text-3xl font-semibold leading-[1.4] tracking-[-0.03em] sm:text-4xl md:text-[3rem]">
-            Cada projeto e um capitulo diferente da nossa parceria com times ambiciosos.
+            Cada projeto é um capítulo diferente da nossa parceria com times ambiciosos.
           </h2>
           <p className="mx-auto max-w-2xl text-base leading-relaxed text-slate-600">
             Selecionamos alguns estudos de caso para mostrar como combinamos estratégia, design e engenharia na
@@ -114,16 +109,14 @@ const HomeProjectsStack = () => {
                   <div
                     data-project-card
                     data-project-index={index}
-                    className={`group relative mx-auto flex h-full w-full max-w-4xl flex-col gap-10 rounded-[32px] border border-[#d7e7ff] p-8 shadow-[0_40px_120px_-80px_rgba(15,40,70,0.28)] backdrop-blur transition-all duration-700 ease-out md:p-12 ${
-                      isCardVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-                    }`}
+                    className={`group relative mx-auto flex h-full w-full max-w-4xl flex-col gap-10 rounded-[32px] border border-[#d7e7ff] bg-white p-8 shadow-[0_40px_120px_-80px_rgba(15,40,70,0.28)] transition-all duration-700 ease-out md:p-12 ${isCardVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
+                      }`}
                     style={{
-                      backgroundImage: `linear-gradient(135deg, ${cardGradientStops.join(", ")})`,
                       transitionDelay: `${index * 140}ms`,
                     }}
                   >
                     <div className="grid gap-8 lg:grid-cols-[minmax(0,0.52fr)_minmax(0,1fr)] lg:items-center">
-                      <div className="relative overflow-hidden rounded-[28px] border border-[#d7e7ff] bg-white/70">
+                      <div className="relative overflow-hidden rounded-[28px] border border-[#d7e7ff] bg-white">
                         <img
                           src={project.image}
                           alt={project.title}

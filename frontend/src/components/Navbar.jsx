@@ -15,11 +15,11 @@ const navThemes = {
   blue: {
     base: "bg-transparent border-b border-transparent text-white",
     solid:
-      "bg-[#004da3]/92 border-b border-white/15 text-white shadow-[0_20px_40px_-24px_rgba(0,0,0,0.45)] backdrop-blur-md",
+      "bg-[#016477]/92 border-b border-white/15 text-white shadow-[0_20px_40px_-24px_rgba(0,0,0,0.45)] backdrop-blur-md",
     link: "text-white/70 hover:text-white",
     linkActive: "text-white",
-    button: "bg-white text-[#004da3] shadow-[0_20px_48px_-22px_rgba(255,255,255,0.55)]",
-    mobileBg: "bg-[#004da3]",
+    button: "bg-white text-[#016477] shadow-[0_20px_48px_-22px_rgba(255,255,255,0.55)]",
+    mobileBg: "bg-[#016477]",
     icon: "bg-white",
   },
   white: {
@@ -28,28 +28,28 @@ const navThemes = {
       "bg-white/92 border-b border-slate-200 text-slate-900 shadow-[0_16px_40px_-24px_rgba(15,23,42,0.18)] backdrop-blur-md",
     link: "text-slate-500 hover:text-slate-900",
     linkActive: "text-slate-900",
-    button: "bg-[#004da3] text-white shadow-[0_18px_36px_-18px_rgba(0,77,163,0.5)]",
+    button: "bg-[#016477] text-white shadow-[0_18px_36px_-18px_rgba(1,100,119,0.5)]",
     mobileBg: "bg-white",
     icon: "bg-slate-900",
   },
   cyan: {
     base: "bg-transparent border-b border-transparent text-white",
     solid:
-      "bg-[#44beee]/90 border-b border-white/20 text-white shadow-[0_20px_48px_-30px_rgba(0,0,0,0.35)] backdrop-blur-md",
+      "bg-[#00a3ab]/90 border-b border-white/20 text-white shadow-[0_20px_48px_-30px_rgba(0,0,0,0.35)] backdrop-blur-md",
     link: "text-white/80 hover:text-white",
     linkActive: "text-white",
-    button: "bg-[#004da3] text-white shadow-[0_18px_36px_-18px_rgba(0,77,163,0.4)]",
-    mobileBg: "bg-[#44beee]",
+    button: "bg-[#016477] text-white shadow-[0_18px_36px_-18px_rgba(1,100,119,0.4)]",
+    mobileBg: "bg-[#00a3ab]",
     icon: "bg-white",
   },
   navy: {
     base: "bg-transparent border-b border-transparent text-white",
     solid:
-      "bg-[#0B56AC]/92 border-b border-white/15 text-white shadow-[0_20px_48px_-30px_rgba(0,0,0,0.35)] backdrop-blur-md",
+      "bg-[#016477]/92 border-b border-white/15 text-white shadow-[0_20px_48px_-30px_rgba(0,0,0,0.35)] backdrop-blur-md",
     link: "text-white/70 hover:text-white",
     linkActive: "text-white",
-    button: "bg-white text-[#0B56AC] shadow-[0_20px_48px_-22px_rgba(255,255,255,0.45)]",
-    mobileBg: "bg-[#0B56AC]",
+    button: "bg-white text-[#016477] shadow-[0_20px_48px_-22px_rgba(255,255,255,0.45)]",
+    mobileBg: "bg-[#016477]",
     icon: "bg-white",
   },
 };
@@ -83,19 +83,19 @@ const Navbar = () => {
   );
 
   const mobileLinkClasses =
-    navThemeKey === "white" ? "text-slate-700 hover:text-[#004da3]" : "text-white/90 hover:text-white";
+    navThemeKey === "white" ? "text-slate-700 hover:text-[#016477]" : "text-white/90 hover:text-white";
   const mobileServiceItemClasses =
     navThemeKey === "white"
-      ? "rounded-2xl border border-[#004da3]/20 bg-white px-4 py-3 text-sm font-medium text-[#004da3] transition-colors hover:bg-[#004da3] hover:text-white"
-      : "rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-medium text-white/90 transition-colors hover:bg-white hover:text-[#004da3]";
+      ? "rounded-2xl border border-[#016477]/20 bg-white px-4 py-3 text-sm font-medium text-[#016477] transition-colors hover:bg-[#016477] hover:text-white"
+      : "rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-medium text-white/90 transition-colors hover:bg-white hover:text-[#016477]";
   const mobileMenuBorder = navThemeKey === "white" ? "border-slate-200" : "border-white/20";
   const mobileDividerBorder = navThemeKey === "white" ? "border-slate-200/80" : "border-white/15";
   const desktopCtaBase =
-    "inline-flex items-center rounded-full px-5 py-2 text-sm font-semibold uppercase tracking-[0.12em] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#004da3]/30";
+    "inline-flex items-center rounded-full px-5 py-2 text-sm font-semibold uppercase tracking-[0.12em] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#016477]/30";
   const mobileCtaBase =
-    "inline-flex items-center rounded-full px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.26em] transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#004da3]/30";
+    "inline-flex items-center rounded-full px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.26em] transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#016477]/30";
   const mobileMenuCtaBase =
-    "group inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.32em] transition-[background-color,transform] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#004da3]/30";
+    "group inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-center text-sm font-semibold uppercase tracking-[0.32em] transition-[background-color,transform] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#016477]/30";
 
   useEffect(() => {
     navThemeKeyRef.current = navThemeKey;
@@ -191,13 +191,12 @@ const Navbar = () => {
   return (
     <header
       onMouseLeave={() => closeServicesMenu()}
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,box-shadow] duration-700 ease-in-out navbar-reveal ${
-        visible ? "navbar-reveal-visible" : ""
-      } ${scrolled ? theme.solid : theme.base}`}
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,box-shadow] duration-700 ease-in-out navbar-reveal ${visible ? "navbar-reveal-visible" : ""
+        } ${scrolled ? theme.solid : theme.base}`}
     >
       <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img src={logoSrc} alt="Ponto Criativo" className="h-10 w-auto transition-opacity duration-500 sm:h-12" />
+          <img src={logoSrc} alt="CriaTec" className="h-14 w-auto transition-opacity duration-500 sm:h-16" />
         </Link>
 
         <nav className="relative hidden items-center gap-8 md:flex">
@@ -206,9 +205,8 @@ const Navbar = () => {
             const isActive = isMegaItem
               ? location.pathname.startsWith(item.path ?? "")
               : location.pathname === item.path;
-            const baseClasses = `text-sm font-medium transition-colors ${
-              isActive ? theme.linkActive : theme.link
-            }`;
+            const baseClasses = `text-sm font-medium transition-colors ${isActive ? theme.linkActive : theme.link
+              }`;
 
             if (isMegaItem) {
               return (
@@ -305,9 +303,8 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`pointer-events-none absolute inset-x-0 top-full hidden justify-center md:flex transition-all duration-200 ${
-          servicesMenuOpen ? "translate-y-0 opacity-100 visible" : "-translate-y-3 opacity-0 invisible"
-        }`}
+        className={`pointer-events-none absolute inset-x-0 top-full hidden justify-center md:flex transition-all duration-200 ${servicesMenuOpen ? "translate-y-0 opacity-100 visible" : "-translate-y-3 opacity-0 invisible"
+          }`}
       >
         <div
           className="pointer-events-auto w-[min(92vw,980px)] rounded-3xl border border-slate-200 bg-white px-10 py-8 shadow-[0_48px_120px_-60px_rgba(15,23,42,0.55)]"
@@ -320,11 +317,11 @@ const Navbar = () => {
                 key={service.slug}
                 to={`/servicos#${service.slug}`}
                 onClick={() => closeServicesMenu(0)}
-                className="group flex h-full flex-col rounded-2xl border border-slate-200/70 bg-white/80 p-5 transition-all duration-200 hover:-translate-y-1 hover:border-[#004da3]/30 hover:shadow-[0_32px_80px_-60px_rgba(0,77,163,0.35)]"
+                className="group flex h-full flex-col rounded-2xl border border-slate-200/70 bg-white/80 p-5 transition-all duration-200 hover:-translate-y-1 hover:border-[#016477]/30 hover:shadow-[0_32px_80px_-60px_rgba(0,77,163,0.35)]"
               >
                 <span className="text-sm font-semibold text-[#002d64]">{service.label}</span>
                 <p className="mt-2 text-xs leading-relaxed text-slate-500">{service.description}</p>
-                <span className="mt-4 flex items-center gap-2 text-xs font-semibold text-[#004da3] opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                <span className="mt-4 flex items-center gap-2 text-xs font-semibold text-[#016477] opacity-0 transition-opacity duration-200 group-hover:opacity-100">
                   Explorar
                   <svg
                     aria-hidden="true"
@@ -346,9 +343,8 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`md:hidden transition-[max-height,opacity] duration-300 ${
-          open ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
-        } overflow-hidden border-t ${mobileMenuBorder} ${theme.mobileBg}`}
+        className={`md:hidden transition-[max-height,opacity] duration-300 ${open ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
+          } overflow-hidden border-t ${mobileMenuBorder} ${theme.mobileBg}`}
       >
         <div className="flex h-full flex-col">
           <div className="flex-1 overflow-y-auto px-4 pb-6 pt-4">
@@ -380,9 +376,8 @@ const Navbar = () => {
                       </button>
                       <div
                         id="mobile-services-list"
-                        className={`overflow-hidden transition-[max-height,opacity] duration-300 ${
-                          mobileServicesOpen ? "max-h-[360px] opacity-100 pt-2" : "max-h-0 opacity-0"
-                        }`}
+                        className={`overflow-hidden transition-[max-height,opacity] duration-300 ${mobileServicesOpen ? "max-h-[360px] opacity-100 pt-2" : "max-h-0 opacity-0"
+                          }`}
                       >
                         <div className="grid max-h-[300px] gap-2 overflow-y-auto pr-1">
                           {servicesMenuItems.map((service) => (

@@ -1,5 +1,3 @@
-console.log("[DEBUG] BACKEND_URL =>", BACKEND_URL);
-
 import axios from 'axios';
 
 const FALLBACK_BACKEND_URL = (() => {

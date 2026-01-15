@@ -19,7 +19,7 @@ const Testimonials = () => {
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 sm:px-6 lg:px-8">
         <Reveal className="space-y-6">
-          <span className="inline-flex rounded-full border border-[#004da3]/20 bg-[#44beee]/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#004da3]">
+          <span className="inline-flex rounded-full border border-[#016477]/20 bg-[#00a3ab]/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#016477]">
             Depoimentos
           </span>
           <h2 className="text-4xl font-semibold leading-[1.4] tracking-[-0.03em] sm:text-5xl">{title}</h2>
@@ -37,7 +37,7 @@ const Testimonials = () => {
               <button
                 type="button"
                 onClick={handlePrev}
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-[#004da3] transition-transform hover:-translate-y-1 hover:border-[#004da3]/60 hover:bg-[#44beee]/20"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-[#016477] transition-transform hover:-translate-y-1 hover:border-[#016477]/60 hover:bg-[#00a3ab]/20"
                 aria-label="Depoimento anterior"
               >
                 <svg
@@ -56,7 +56,7 @@ const Testimonials = () => {
               <button
                 type="button"
                 onClick={handleNext}
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-[#004da3] transition-transform hover:-translate-y-1 hover:border-[#004da3]/60 hover:bg-[#44beee]/20"
+                className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-[#016477] transition-transform hover:-translate-y-1 hover:border-[#016477]/60 hover:bg-[#00a3ab]/20"
                 aria-label="Próximo depoimento"
               >
                 <svg

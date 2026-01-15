@@ -62,7 +62,7 @@ const About = () => {
           ))}
         </Reveal>
 
-        <Reveal className="rounded-[2.5rem] border border-slate-100 bg-gradient-to-br from-white via-white to-accent p-10 shadow-[0_40px_110px_-70px_rgba(0,77,163,0.35)]">
+        <Reveal className="rounded-[2.5rem] border border-slate-100 bg-slate-50 p-10 shadow-[0_40px_110px_-70px_rgba(0,0,0,0.15)]">
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-slate-900">Nossos princípios de trabalho</h3>

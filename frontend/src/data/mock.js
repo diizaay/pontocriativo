@@ -1,7 +1,7 @@
 export const mockData = {
   company: {
-    name: "Ponto Criativo",
-    tagline: "Transformar para crescer",
+    name: "CriaTec",
+    tagline: "Conectando soluções reais",
     description:
       "Ajudando empresas e startups a crescerem através de soluções tecnológicas criativas e funcionais.",
   },
@@ -29,9 +29,9 @@ export const mockData = {
   services: [
     {
       id: 1,
-      title: "Estratégia UX e Produto",
+      title: "Estratégia & Discovery",
       description:
-        "Conectamos objetivos de negócio e necessidades dos usuários para planejar produtos digitais com resultados mensuráveis.",
+        "Reduzimos incertezas transformando dores reais em roadmaps de produto orientados a resultados de negócio e impacto para o usuário.",
       features: [
         "Diagnóstico e discovery",
         "Mapas de jornada e blueprint",
@@ -205,7 +205,7 @@ export const mockData = {
       name: "Maria Santos",
       role: "CEO, TechStart",
       content:
-        "O Ponto Criativo transformou nossa visão em uma plataforma incrível. O profissionalismo e a atenção aos detalhes superaram todas as expectativas.",
+        "A CriaTec transformou nossa visão em uma plataforma incrível. O profissionalismo e a atenção aos detalhes superaram todas as expectativas.",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Maria",
     },
     {
@@ -221,7 +221,7 @@ export const mockData = {
       name: "Ana Oliveira",
       role: "Fundadora, HealthTech",
       content:
-        "Desenvolver nosso app de saúde com o Ponto Criativo foi uma experiência fantástica. Comunicação clara e resultados impressionantes.",
+        "Desenvolver nosso app de saúde com a CriaTec foi uma experiência fantástica. Comunicação clara e resultados impressionantes.",
       avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Ana",
     },
   ],
@@ -229,13 +229,13 @@ export const mockData = {
   contact: {
     title: "Vamos Criar Algo Incrível Juntos",
     subtitle: "Entre em contato e descubra como podemos transformar suas ideias em realidade.",
-    email: "contato@pontocriativo.com",
+    email: "contato@criatec.com",
     phone: "+244 926 464 089",
     address: "Luanda, Angola",
     social: {
-      linkedin: "https://linkedin.com/company/pontocriativo",
-      instagram: "https://www.instagram.com/ponto_criativo20/",
-      facebook: "https://www.facebook.com/profile.php?id=100091433748814",
+      linkedin: "https://linkedin.com/company/criatec",
+      instagram: "https://www.instagram.com/criatec/",
+      facebook: "https://www.facebook.com/criatec",
     },
   },
 };

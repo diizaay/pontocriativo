@@ -15,9 +15,8 @@ const justifyClasses = {
 const SectionWrapper = ({ children, bg = "bg-white", theme = "white", align = "start" }) => (
   <section
     data-nav-theme={theme}
-    className={`relative flex min-h-screen ${alignmentClasses[align] ?? alignmentClasses.start} ${
-      justifyClasses[align] ?? justifyClasses.start
-    } overflow-hidden py-16 sm:py-20 lg:py-24 ${bg}`}
+    className={`relative flex min-h-screen ${alignmentClasses[align] ?? alignmentClasses.start} ${justifyClasses[align] ?? justifyClasses.start
+      } overflow-hidden py-16 sm:py-20 lg:py-24 ${bg}`}
   >
     {children}
   </section>
@@ -37,7 +36,7 @@ const aboutSections = [
     },
     content: {
       eyebrow: "Nossa origem",
-      title: "O Ponto Criativo nasceu conectando talento, estratégia e proximidade com cada cliente.",
+      title: "A CriaTec nasceu conectando talento, estratégia e proximidade com cada cliente.",
       description:
         "Fundamos o estúdio para entregar experiência ponta a ponta — da descoberta ao deploy. Cada projeto recebe um squad dedicado que trabalha como extensão do seu time, com transparência, rituais claros e métricas compartilhadas.",
       cta: {
@@ -61,7 +60,7 @@ const aboutSections = [
   {
     key: "why-choose-us",
     theme: "blue",
-    bg: "bg-[#004da3]",
+    bg: "bg-[#016477]",
     layout: "lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)]",
     reasons: [
       {
@@ -111,7 +110,7 @@ const aboutSections = [
 const AboutPage = () => {
   return (
     <div className="bg-white text-slate-900">
-      <SectionWrapper theme="blue" bg="bg-[#004da3]" align="center">
+      <SectionWrapper theme="blue" bg="bg-[#016477]" align="center">
         <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 text-center sm:px-6 lg:px-8">
           <Reveal as="h1" className="text-[2.9rem] font-semibold leading-[1.4] tracking-[-0.035em] text-white sm:text-[3.4rem]">
             Sobre nós
@@ -134,16 +133,16 @@ const AboutPage = () => {
               <div className={`mx-auto grid w-full max-w-6xl gap-10 px-4 sm:px-6 lg:${section.layout} lg:px-8`}>
                 <Reveal
                   delay={80}
-                  className="order-2 flex flex-col justify-center gap-6 rounded-[32px] bg-gradient-to-br from-[#e3ecff] via-[#f5f8ff] to-white p-10 lg:order-1"
+                  className="order-2 flex flex-col justify-center gap-6 rounded-[32px] bg-slate-50 p-10 lg:order-1"
                 >
-                  <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#004da3]/70">{section.content.eyebrow}</span>
+                  <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#016477]/70">{section.content.eyebrow}</span>
                   <h2 className="text-3xl font-semibold leading-[1.38] tracking-[-0.03em] text-[#07173d] sm:text-[2.6rem]">
                     {section.content.title}
                   </h2>
                   <p className="text-base leading-relaxed text-slate-600">{section.content.description}</p>
                   <Link
                     to={section.content.cta.to}
-                    className="inline-flex w-max items-center gap-3 rounded-full border border-[#004da3] px-6 py-3 text-sm font-semibold text-[#004da3] transition hover:bg-[#004da3] hover:text-white"
+                    className="inline-flex w-max items-center gap-3 rounded-full border border-[#016477] px-6 py-3 text-sm font-semibold text-[#016477] transition hover:bg-[#016477] hover:text-white"
                   >
                     {section.content.cta.label}
                   </Link>
@@ -154,7 +153,7 @@ const AboutPage = () => {
                   className="order-1 flex flex-col items-center justify-center gap-6 rounded-[32px] bg-white shadow-[0_30px_100px_-70px_rgba(0,77,163,0.45)] lg:order-2"
                 >
                   <div className="flex min-h-[340px] w-full flex-col items-center justify-center gap-5 px-8 text-center">
-                    <span className="rounded-full border border-[#004da3]/15 bg-[#eaf2ff] px-4 py-2 text-xs font-semibold uppercase tracking-[0.36em] text-[#004da3]">
+                    <span className="rounded-full border border-[#016477]/15 bg-[#eaf2ff] px-4 py-2 text-xs font-semibold uppercase tracking-[0.36em] text-[#016477]">
                       {section.image.label}
                     </span>
                     <p className="max-w-sm text-sm leading-relaxed text-slate-600">{section.image.description}</p>
@@ -170,7 +169,7 @@ const AboutPage = () => {
             <SectionWrapper key={section.key} theme="white" bg="bg-white">
               <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
                 <Reveal className="text-center space-y-4">
-                  <span className="text-xs font-semibold uppercase tracking-[0.32em] text-[#004da3]/70">
+                  <span className="text-xs font-semibold uppercase tracking-[0.32em] text-[#016477]/70">
                     O que valorizamos
                   </span>
                   <h3 className="text-3xl font-semibold tracking-[-0.02em] text-[#07173d] sm:text-[2.5rem]">
@@ -184,7 +183,7 @@ const AboutPage = () => {
                       delay={valueIndex * 120}
                       className="relative overflow-hidden rounded-[28px] border border-[#e1e8f8] bg-[#f8faff] p-6 shadow-[0_28px_80px_-60px_rgba(0,77,163,0.35)] transition-transform duration-500 hover:-translate-y-2"
                     >
-                      <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#004da3]/70">{value.title}</span>
+                      <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#016477]/70">{value.title}</span>
                       <p className="mt-3 text-sm leading-relaxed text-slate-600">{value.description}</p>
                     </Reveal>
                   ))}
@@ -196,7 +195,7 @@ const AboutPage = () => {
 
         if (section.key === "why-choose-us") {
           return (
-            <SectionWrapper key={section.key} theme="blue" bg="bg-[#004da3] text-white">
+            <SectionWrapper key={section.key} theme="blue" bg="bg-[#016477] text-white">
               <Reveal className="mx-auto grid w-full max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:px-8">
                 <div className="space-y-6">
                   <Reveal className="space-y-4">
@@ -229,7 +228,7 @@ const AboutPage = () => {
                   </div>
                   <Link
                     to={section.support.cta.to}
-                    className="mt-6 inline-flex w-max items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#004da3] transition hover:-translate-y-0.5"
+                    className="mt-6 inline-flex w-max items-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#016477] transition hover:-translate-y-0.5"
                   >
                     {section.support.cta.label}
                   </Link>
@@ -244,18 +243,18 @@ const AboutPage = () => {
             <SectionWrapper key={section.key} theme="white" bg="bg-white">
               <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:flex-row lg:items-center lg:gap-16 lg:px-8">
                 <Reveal className="flex-1 space-y-6">
-                  <span className="text-xs font-semibold uppercase tracking-[0.32em] text-[#004da3]/70">{section.process.eyebrow}</span>
+                  <span className="text-xs font-semibold uppercase tracking-[0.32em] text-[#016477]/70">{section.process.eyebrow}</span>
                   <h3 className="text-3xl font-semibold leading-[1.38] tracking-[-0.02em] text-[#07173d] sm:text-[2.6rem]">{section.process.title}</h3>
                   <p className="text-base leading-relaxed text-slate-600">{section.process.description}</p>
                   <Link
                     to={section.process.cta.to}
-                    className="inline-flex w-max items-center gap-3 rounded-full border border-[#004da3] px-6 py-3 text-sm font-semibold text-[#004da3] transition hover:bg-[#004da3] hover:text-white"
+                    className="inline-flex w-max items-center gap-3 rounded-full border border-[#016477] px-6 py-3 text-sm font-semibold text-[#016477] transition hover:bg-[#016477] hover:text-white"
                   >
                     {section.process.cta.label}
                   </Link>
                 </Reveal>
                 <Reveal delay={120} className="flex-1 rounded-[30px] border border-[#dfe6ff] bg-[#f5f8ff] p-10">
-                  <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#004da3]/70">Confiado por</span>
+                  <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#016477]/70">Confiado por</span>
                   <div className="mt-6 grid gap-6 text-slate-600 sm:grid-cols-2">
                     {section.logos.map((logo) => (
                       <div key={logo} className="rounded-2xl border border-[#e3ebff] bg-white px-6 py-4 text-center text-sm font-semibold uppercase tracking-[0.26em] text-[#07173d]">
@@ -272,9 +271,7 @@ const AboutPage = () => {
         return null;
       })}
 
-      <SectionWrapper theme="blue" bg="bg-[#004da3] text-white">
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black/15 via-transparent to-transparent" />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#004da3] via-transparent to-transparent" />
+      <SectionWrapper theme="blue" bg="bg-[#016477] text-white" align="center">
         <div className="relative mx-auto max-w-4xl space-y-6 px-4 text-center sm:px-6 lg:px-8">
           <Reveal className="space-y-4">
             <span className="inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-white/75">
@@ -291,7 +288,7 @@ const AboutPage = () => {
           <Reveal delay={160} className="flex flex-wrap justify-center gap-4">
             <Link
               to="/contato"
-              className="btn-soft-elevate inline-flex items-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#004da3] transition-transform hover:-translate-y-0.5"
+              className="btn-soft-elevate inline-flex items-center rounded-full bg-white px-7 py-3 text-sm font-semibold text-[#016477] transition-transform hover:-translate-y-0.5"
             >
               Conversar sobre um projeto
             </Link>

@@ -3,7 +3,7 @@
     <linearGradient id="servicesMethodGradient" x1="96" y1="48" x2="424" y2="360" gradientUnits="userSpaceOnUse">
       <stop offset="0.1" stop-color="#0A4C98"/>
       <stop offset="0.6" stop-color="#0B69C5"/>
-      <stop offset="1" stop-color="#44BEEE"/>
+      <stop offset="1" stop-color="#00a3ab"/>
     </linearGradient>
     <filter id="servicesMethodShadow" x="48" y="32" width="424" height="344" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feGaussianBlur stdDeviation="28" result="blur"/>
@@ -20,19 +20,19 @@
     <path d="M228 232H296L316 212"/>
   </g>
   <g>
-    <circle cx="196" cy="136" r="12" fill="#44BEEE"/>
+    <circle cx="196" cy="136" r="12" fill="#00a3ab"/>
     <circle cx="252" cy="126" r="14" fill="#0B5EC1"/>
-    <circle cx="308" cy="136" r="12" fill="#44BEEE"/>
+    <circle cx="308" cy="136" r="12" fill="#00a3ab"/>
   </g>
   <g opacity="0.85">
     <rect x="168" y="264" width="80" height="40" rx="20" fill="#0A4C98"/>
-    <rect x="260" y="264" width="80" height="40" rx="20" fill="#44BEEE"/>
+    <rect x="260" y="264" width="80" height="40" rx="20" fill="#00a3ab"/>
   </g>
   <g opacity="0.6">
     <path d="M116 204C116 180.595 135.595 161 159 161H178" stroke="#A8E4FF" stroke-width="3" stroke-linecap="round" stroke-dasharray="12 16"/>
     <path d="M404 204C404 180.595 384.405 161 361 161H342" stroke="#A8E4FF" stroke-width="3" stroke-linecap="round" stroke-dasharray="12 16"/>
   </g>
-  <circle cx="88" cy="204" r="28" fill="#44BEEE" opacity="0.8"/>
+  <circle cx="88" cy="204" r="28" fill="#00a3ab" opacity="0.8"/>
   <circle cx="432" cy="204" r="28" fill="#0A4C98" opacity="0.8"/>
   <path d="M88 196L92 200L104 188" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M432 196L436 200L448 188" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>

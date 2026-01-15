@@ -103,7 +103,7 @@ const Services = () => {
       <section id="services" className="bg-[#05070f] py-24 text-white">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-3 px-4 text-center sm:px-6 lg:px-8">
           <span className="h-10 w-10 animate-spin rounded-full border-2 border-white/25 border-t-white" />
-          <p className="text-xs uppercase tracking-[0.32em] text-white/60">carregando servicos</p>
+          <p className="text-xs uppercase tracking-[0.32em] text-white/60">carregando serviços</p>
         </div>
       </section>
     );
@@ -138,7 +138,7 @@ const Services = () => {
               to="/servicos"
               className="inline-flex items-center gap-3 rounded-full border border-white/25 px-6 py-2 text-xs font-semibold uppercase tracking-[0.34em] text-white transition-colors hover:border-white hover:bg-white/10"
             >
-              Ver todos os servicos
+              Ver todos os serviços
               <svg
                 aria-hidden="true"
                 className="h-3 w-3"
@@ -168,7 +168,7 @@ const Services = () => {
               <Link
                 key={service.slug}
                 to={`/servicos#${service.slug}`}
-                className="group relative flex min-h-[280px] min-w-[320px] max-w-[340px] flex-col justify-between gap-6 rounded-[32px] border border-white/10 bg-gradient-to-br from-[#0c1530] via-[#0e1a3a] to-[#0b254e] p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_30px_90px_-60px_rgba(0,77,163,0.7)] sm:min-w-[360px] sm:max-w-[380px]"
+                className="group relative flex min-h-[280px] min-w-[320px] max-w-[340px] flex-col justify-between gap-6 rounded-[32px] border border-white/10 bg-[#001a1e] p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_30px_90px_-60px_rgba(0,0,0,0.5)] sm:min-w-[360px] sm:max-w-[380px]"
               >
                 <div className="space-y-4">
                   <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-xs font-semibold uppercase tracking-[0.26em] text-white/70 transition-colors group-hover:border-white/40 group-hover:text-white">

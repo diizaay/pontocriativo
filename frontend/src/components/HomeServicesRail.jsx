@@ -115,10 +115,6 @@ const HomeServicesRail = () => {
       style={{ height: sectionHeight }}
       className="relative bg-white text-[#0b2247]"
     >
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[#e6f1ff]/80 via-transparent to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-white to-transparent" />
-      </div>
 
       <div
         ref={stickyRef}
@@ -151,7 +147,6 @@ const HomeServicesRail = () => {
                 to={`/servicos#${service.slug}`}
                 className="group home-service-card relative flex min-h-[360px] w-[300px] flex-col gap-6 overflow-hidden rounded-[28px] border border-[#d6e5fb] bg-white/95 p-7 text-left shadow-[0_36px_110px_-70px_rgba(15,38,70,0.35)] transition-transform duration-300 hover:-translate-y-2 sm:w-[330px]"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-white via-transparent to-[#e5f1ff]/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
                 <div className="relative flex items-center justify-between text-xs font-semibold uppercase tracking-[0.28em] text-[#5a77a6]">
                   <span>{service.index}</span>

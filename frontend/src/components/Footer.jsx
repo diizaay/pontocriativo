@@ -58,7 +58,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="footer-animated bg-[#004da3] py-16 text-white">
+    <footer className="footer-animated bg-[#016477] py-16 text-white">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-4">
@@ -82,8 +82,8 @@ const Footer = () => {
                 <p className="text-base font-semibold text-white">Luanda</p>
                 <p>Vila Alice, Luanda</p>
               </div>
-             
-              
+
+
             </div>
           </div>
 

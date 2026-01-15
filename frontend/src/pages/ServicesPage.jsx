@@ -127,11 +127,11 @@ const ServicesPage = () => {
     <div className="services-page bg-white text-slate-900">
       <section
         data-nav-theme="blue"
-        className="relative overflow-hidden bg-[#004da3] pt-32 pb-24 text-white"
+        className="relative overflow-hidden bg-[#016477] pt-32 pb-24 text-white"
       >
         <div className="relative mx-auto w-full max-w-5xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal as="h1" delay={120} className="mt-6 text-[2.7rem] font-semibold leading-[1.34] tracking-[-0.035em] sm:text-[3.2rem]">
-            Estrategia, design e tecnologia para produtos digitais completos.
+            Estratégia, design e tecnologia para produtos digitais completos.
           </Reveal>
           <Reveal
             as="p"
@@ -139,13 +139,12 @@ const ServicesPage = () => {
             className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-white/85 sm:text-lg"
           >
             Combinamos discovery, UX, UI e engenharia para tirar ideias do papel ou evoluir plataformas existentes. Cada
-            projeto recebe um squad dedicado, com rituais, indicadores e entregaveis claros do kickoff a evolução.
+            projeto recebe um squad dedicado, com rituais, indicadores e entregáveis claros do kickoff à evolução.
           </Reveal>
         </div>
       </section>
 
       <section data-nav-theme="white" className="relative border-t border-[#e1e8f8] bg-white pb-24 pt-12">
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white via-transparent to-transparent" />
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:flex-row lg:gap-16 lg:px-8">
           <aside className="hidden lg:block lg:w-[240px]">
             <div className="sticky top-28 space-y-3">
@@ -155,11 +154,10 @@ const ServicesPage = () => {
                   <Link
                     key={service.slug}
                     to={`/servicos#${service.slug}`}
-                    className={`group flex items-start gap-3 rounded-2xl border px-4 py-3 transition ${
-                      isActive
-                        ? "border-[#0b2a68] bg-[#0b2a68]/5 text-[#0b2a68]"
-                        : "border-transparent text-slate-500 hover:border-[#0b2a68]/20 hover:text-[#0b2a68]"
-                    }`}
+                    className={`group flex items-start gap-3 rounded-2xl border px-4 py-3 transition ${isActive
+                      ? "border-[#0b2a68] bg-[#0b2a68]/5 text-[#0b2a68]"
+                      : "border-transparent text-slate-500 hover:border-[#0b2a68]/20 hover:text-[#0b2a68]"
+                      }`}
                   >
                     <span className="text-xs font-semibold uppercase tracking-[0.32em]">{String(index + 1).padStart(2, "0")}</span>
                     <span className="flex flex-col gap-1">
@@ -216,7 +214,7 @@ const ServicesPage = () => {
                           >
                             <span>{String(index + 1).padStart(2, "0")}</span>
                             <span className="h-px w-10 bg-[#0b2a68]/15" />
-                            <span>Servico</span>
+                            <span>Serviço</span>
                           </Reveal>
 
                           <Reveal delay={baseDelay + 120}>
@@ -268,8 +266,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      <section data-nav-theme="white" className="relative overflow-hidden bg-gradient-to-br from-white via-[#f5f8ff] to-white py-24">
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white via-transparent to-transparent" />
+      <section data-nav-theme="white" className="relative overflow-hidden bg-white py-24">
         <div className="relative mx-auto w-full max-w-6xl grid gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,0.8fr)] lg:px-8 lg:items-center">
           <div className="space-y-8">
             <Reveal
@@ -323,11 +320,11 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      <section data-nav-theme="blue" className="relative overflow-hidden bg-[#004da3] py-24 text-white">
+      <section data-nav-theme="blue" className="relative overflow-hidden bg-[#016477] py-24 text-white">
         <div className="relative mx-auto flex w-full max-w-5xl flex-col items-center gap-8 px-4 text-center sm:px-6 lg:px-8">
           <Reveal className="space-y-6">
             <span className="inline-flex rounded-full border border-white/25 bg-white/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white/80">
-              Pronto para comecar?
+              Pronto para começar?
             </span>
             <h3 className="text-3xl font-semibold leading-[1.35] tracking-[-0.02em] sm:text-[2.7rem]">
               Montamos um squad sob medida em menos de duas semanas.
@@ -354,7 +351,7 @@ const ServicesPage = () => {
           </Reveal>
         </div>
       </section>
-    </div>
+    </div >
   );
 };
 
