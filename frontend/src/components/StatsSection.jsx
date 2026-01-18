@@ -96,7 +96,7 @@ const StatsSection = () => {
                 <div className="absolute inset-0 rounded-[32px] bg-[#01233c]/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="relative flex items-baseline gap-2 text-5xl font-semibold text-[#01233c]">
                   <span>{formattedValue}</span>
-                  <span className="text-3xl font-semibold text-[#3b82f6]">{stat.suffix}</span>
+                  <span className="text-3xl font-semibold text-[#00a3ab]">{stat.suffix}</span>
                 </div>
                 <p className="relative mt-5 text-sm font-medium uppercase tracking-[0.24em] text-slate-500">
                   {stat.label}
