@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       data-nav-theme="blue"
-      className="relative flex min-h-screen items-center overflow-hidden bg-[#016477] pt-32 text-white"
+      className="relative flex min-h-screen items-center overflow-hidden bg-[#01233c] pt-32 text-white"
     >
       <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,0.85fr)]">

@@ -64,10 +64,10 @@ const Projects = () => {
             <span className="inline-flex rounded-full border border-[#01233c]/20 bg-[#01233c]/5 px-5 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#01233c]">
               Portfolio
             </span>
-            <h2 className="max-w-2xl text-3xl font-semibold leading-[1.34] tracking-[-0.02em] text-slate-900 sm:text-4xl">
+            <h2 className="max-w-2xl text-3xl font-semibold leading-[1.45] tracking-[-0.02em] text-[#01233c] sm:text-4xl">
               Projetos que elevam experiências digitais e resultados de negócio.
             </h2>
-            <p className="max-w-xl text-base leading-relaxed text-slate-600">
+            <p className="max-w-xl text-base leading-relaxed text-[#01233c]/80">
               Cada entrega combina pesquisa, design e engenharia para acelerar o crescimento de marcas ambiciosas com
               consistência e impacto mensurável.
             </p>
@@ -137,8 +137,8 @@ const Projects = () => {
             {filteredProjects.map((project, index) => {
               const isEven = index % 2 === 0;
               const accentBg = isEven ? "#ffffff" : "#01233c";
-              const textPrimary = isEven ? "text-slate-900" : "text-white";
-              const textSecondary = isEven ? "text-slate-600" : "text-white/80";
+              const textPrimary = isEven ? "text-[#01233c]" : "text-white";
+              const textSecondary = isEven ? "text-[#01233c]/80" : "text-white/80";
               const numberTone = isEven ? "text-[#01233c]/60" : "text-white/70";
               const dividerTone = isEven ? "bg-[#01233c]/15" : "bg-white/30";
               const tagTone = isEven
@@ -183,7 +183,7 @@ const Projects = () => {
                             <span className={`h-px flex-1 ${dividerTone}`} />
                             <span className="tracking-normal">{project.client}</span>
                           </div>
-                          <h3 className="text-3xl font-semibold leading-[1.34] md:text-[2.2rem]">{project.title}</h3>
+                          <h3 className="text-3xl font-semibold leading-[1.45] md:text-[2.2rem]">{project.title}</h3>
                           <p className={`text-base leading-relaxed ${textSecondary}`}>{project.description}</p>
                         </div>
 
@@ -229,10 +229,10 @@ const Projects = () => {
       <div className="project-row py-16 sm:py-20" style={{ "--row-background": "#ffffff" }}>
         <Reveal className="mx-auto flex w-full max-w-4xl flex-col items-center gap-8 px-6 text-center">
           <p className="text-lg font-medium italic text-[#01233c]">Vamos colaborar?</p>
-          <h3 className="text-4xl font-semibold tracking-[-0.02em] text-slate-900 sm:text-[2.8rem]">
+          <h3 className="text-4xl font-semibold tracking-[-0.02em] text-[#01233c] sm:text-[2.8rem]">
             Transformamos sua visão em experiências digitais memoráveis.
           </h3>
-          <p className="max-w-3xl text-base leading-relaxed text-slate-600">
+          <p className="max-w-3xl text-base leading-relaxed text-[#01233c]/80">
             Reunimos especialistas em pesquisa, design e tecnologia para construir produtos que combinam desempenho e
             identidade. Conte com a gente para o próximo capítulo da sua marca.
           </p>

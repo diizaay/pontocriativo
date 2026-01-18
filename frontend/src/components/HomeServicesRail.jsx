@@ -125,7 +125,7 @@ const HomeServicesRail = () => {
             Serviços
           </span>
           <div className="max-w-xl space-y-4">
-            <h2 className="text-3xl font-semibold leading-[1.35] tracking-[-0.03em] text-[#0a1f3f] sm:text-[3rem]">
+            <h2 className="text-3xl font-semibold leading-[1.45] tracking-[-0.03em] text-[#0a1f3f] sm:text-[3rem]">
               Impacto em cada etapa da jornada digital
             </h2>
             <p className="text-base leading-relaxed text-slate-600 sm:text-lg">

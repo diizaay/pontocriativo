@@ -72,7 +72,7 @@ const StatsSection = () => {
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#01233c]/70">
               Impacto comprovado
             </p>
-            <h2 className="text-3xl font-semibold leading-[1.34] tracking-[-0.02em] text-slate-900 sm:text-4xl">
+            <h2 className="text-3xl font-semibold leading-[1.45] tracking-[-0.02em] text-[#01233c] sm:text-4xl">
               Nossa história em números
             </h2>
           </div>
@@ -96,7 +96,7 @@ const StatsSection = () => {
                 <div className="absolute inset-0 rounded-[32px] bg-[#01233c]/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="relative flex items-baseline gap-2 text-5xl font-semibold text-[#01233c]">
                   <span>{formattedValue}</span>
-                  <span className="text-3xl font-semibold text-[#01233c]">{stat.suffix}</span>
+                  <span className="text-3xl font-semibold text-[#3b82f6]">{stat.suffix}</span>
                 </div>
                 <p className="relative mt-5 text-sm font-medium uppercase tracking-[0.24em] text-slate-500">
                   {stat.label}

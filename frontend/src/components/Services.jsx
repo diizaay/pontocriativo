@@ -130,7 +130,7 @@ const Services = () => {
         <Reveal className="space-y-5">
           <p className="text-xs font-semibold uppercase tracking-[0.42em] text-white/45">Serviços</p>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <h2 className="text-3xl font-light leading-none tracking-[-0.03em] text-white sm:text-[3.2rem]">
+            <h2 className="text-3xl font-light leading-[1.45] tracking-[-0.03em] text-white sm:text-[3.2rem]">
               <span className="font-serif italic text-white/75">Browse</span>{" "}
               <span className="font-semibold">by Category</span>
             </h2>
@@ -174,8 +174,8 @@ const Services = () => {
                   <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-xs font-semibold uppercase tracking-[0.26em] text-white/70 transition-colors group-hover:border-white/40 group-hover:text-white">
                     {service.title.split(" ")[0]}
                   </span>
-                  <h3 className="text-2xl font-semibold leading-[1.34] text-white">{service.title}</h3>
-                  <p className="text-sm leading-relaxed text-white/70">{service.description}</p>
+                  <h3 className="text-2xl font-semibold leading-[1.34] text-white group-hover:text-white">{service.title}</h3>
+                  <p className="text-sm leading-relaxed text-white/70 group-hover:text-white/90">{service.description}</p>
                 </div>
 
                 <div className="space-y-3 text-[0.68rem] uppercase tracking-[0.3em] text-white/60">
