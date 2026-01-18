@@ -45,8 +45,8 @@ const Projects = () => {
     return (
       <section id="projects" className="bg-white py-32">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-3 px-4 text-center sm:px-6 lg:px-8">
-          <span className="h-10 w-10 animate-spin rounded-full border-2 border-[#016477]/30 border-t-[#016477]" />
-          <p className="text-sm uppercase tracking-[0.28em] text-[#016477]">Carregando projetos</p>
+          <span className="h-10 w-10 animate-spin rounded-full border-2 border-[#01233c]/30 border-t-[#01233c]" />
+          <p className="text-sm uppercase tracking-[0.28em] text-[#01233c]">Carregando projetos</p>
         </div>
       </section>
     );
@@ -61,7 +61,7 @@ const Projects = () => {
       <div className="mx-auto w-full max-w-7xl space-y-16 px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] md:items-end">
           <Reveal className="space-y-6">
-            <span className="inline-flex rounded-full border border-[#016477]/20 bg-[#00a3ab]/15 px-5 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#016477]">
+            <span className="inline-flex rounded-full border border-[#01233c]/20 bg-[#01233c]/5 px-5 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#01233c]">
               Portfolio
             </span>
             <h2 className="max-w-2xl text-3xl font-semibold leading-[1.34] tracking-[-0.02em] text-slate-900 sm:text-4xl">
@@ -74,7 +74,7 @@ const Projects = () => {
           </Reveal>
 
           <Reveal className="space-y-5 md:justify-self-end" delay={120}>
-            <p className="text-sm font-medium text-[#016477]/70">Filtrar por categoria</p>
+            <p className="text-sm font-medium text-[#01233c]/70">Filtrar por categoria</p>
             <div className="flex flex-wrap gap-3 md:flex-col md:items-end md:gap-2">
               {categories.map((category) => {
                 const isActive = category === filter;
@@ -84,8 +84,8 @@ const Projects = () => {
                     type="button"
                     onClick={() => setFilter(category)}
                     className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${isActive
-                      ? "bg-[#016477] text-white shadow-[0_14px_30px_-18px_rgba(0,77,163,0.45)]"
-                      : "bg-white/70 text-[#016477] hover:bg-white"
+                      ? "bg-[#01233c] text-white shadow-[0_14px_30px_-18px_rgba(0,35,60,0.45)]"
+                      : "bg-white/70 text-[#01233c] hover:bg-white"
                       }`}
                   >
                     {category}
@@ -98,8 +98,8 @@ const Projects = () => {
 
         <div className="grid gap-12 lg:grid-cols-[280px_minmax(0,1fr)]">
           <Reveal className="hidden h-full lg:block" delay={140}>
-            <div className="sticky top-32 flex flex-col gap-6 rounded-[28px] border border-[#016477]/10 bg-white/85 p-8 shadow-[0_30px_90px_-60px_rgba(0,77,163,0.25)] backdrop-blur">
-              <p className="text-sm font-semibold text-[#016477]">Categorias</p>
+            <div className="sticky top-32 flex flex-col gap-6 rounded-[28px] border border-[#01233c]/10 bg-white/85 p-8 shadow-[0_30px_90px_-60px_rgba(0,35,60,0.25)] backdrop-blur">
+              <p className="text-sm font-semibold text-[#01233c]">Categorias</p>
               <div className="flex flex-col gap-3">
                 {categories.map((category) => {
                   const isActive = category === filter;
@@ -109,8 +109,8 @@ const Projects = () => {
                       type="button"
                       onClick={() => setFilter(category)}
                       className={`flex items-center justify-between rounded-2xl px-5 py-3 text-left text-sm font-medium transition-all ${isActive
-                        ? "bg-[#016477] text-white shadow-[0_16px_40px_-24px_rgba(0,77,163,0.55)]"
-                        : "bg-white text-[#016477] hover:bg-[#00a3ab]/15"
+                        ? "bg-[#01233c] text-white shadow-[0_16px_40px_-24px_rgba(0,35,60,0.55)]"
+                        : "bg-white text-[#01233c] hover:bg-[#01233c]/5"
                         }`}
                     >
                       <span>{category}</span>
@@ -136,20 +136,20 @@ const Projects = () => {
           <div className="flex flex-col">
             {filteredProjects.map((project, index) => {
               const isEven = index % 2 === 0;
-              const accentBg = isEven ? "#ffffff" : "#016477";
+              const accentBg = isEven ? "#ffffff" : "#01233c";
               const textPrimary = isEven ? "text-slate-900" : "text-white";
               const textSecondary = isEven ? "text-slate-600" : "text-white/80";
-              const numberTone = isEven ? "text-[#016477]/60" : "text-white/70";
-              const dividerTone = isEven ? "bg-[#016477]/15" : "bg-white/30";
+              const numberTone = isEven ? "text-[#01233c]/60" : "text-white/70";
+              const dividerTone = isEven ? "bg-[#01233c]/15" : "bg-white/30";
               const tagTone = isEven
-                ? "rounded-full bg-[#00a3ab]/20 px-4 py-2 text-xs font-medium text-[#016477]"
+                ? "rounded-full bg-[#01233c]/10 px-4 py-2 text-xs font-medium text-[#01233c]"
                 : "rounded-full bg-white/20 px-4 py-2 text-xs font-medium text-white";
-              const resultsTone = isEven ? "text-sm font-semibold text-[#016477]" : "text-sm font-semibold text-white";
+              const resultsTone = isEven ? "text-sm font-semibold text-[#01233c]" : "text-sm font-semibold text-white";
               const ctaTone = isEven
-                ? "inline-flex items-center gap-2 text-sm font-semibold text-[#016477] transition-colors hover:text-[#0a3a7a]"
+                ? "inline-flex items-center gap-2 text-sm font-semibold text-[#01233c] transition-colors hover:text-[#0b2a68]"
                 : "inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors hover:text-white/80";
-              const badgeTone = isEven ? "bg-white/90 text-[#016477]" : "bg-white/15 text-white";
-              const imageBg = isEven ? "bg-[#016477]/5" : "bg-[#00a3ab]/10";
+              const badgeTone = isEven ? "bg-white/90 text-[#01233c]" : "bg-white/15 text-white";
+              const imageBg = isEven ? "bg-[#01233c]/5" : "bg-white/10";
 
               return (
                 <div
@@ -168,7 +168,7 @@ const Projects = () => {
                           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                         />
                         <div
-                          className={`pointer-events-none absolute inset-0 bg-gradient-to-t ${isEven ? "from-[#016477]/25" : "from-black/35"
+                          className={`pointer-events-none absolute inset-0 bg-gradient-to-t ${isEven ? "from-[#01233c]/25" : "from-black/35"
                             } via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100`}
                         />
                         <span className={`absolute left-5 top-5 rounded-full px-4 py-1 text-xs font-semibold ${badgeTone}`}>
@@ -196,7 +196,7 @@ const Projects = () => {
                         </div>
 
                         <div
-                          className={`mt-auto flex flex-wrap items-center justify-between gap-4 border-t pt-6 ${isEven ? "border-[#016477]/10" : "border-white/25"
+                          className={`mt-auto flex flex-wrap items-center justify-between gap-4 border-t pt-6 ${isEven ? "border-[#01233c]/10" : "border-white/25"
                             }`}
                         >
                           <p className={resultsTone}>{project.results}</p>
@@ -228,7 +228,7 @@ const Projects = () => {
 
       <div className="project-row py-16 sm:py-20" style={{ "--row-background": "#ffffff" }}>
         <Reveal className="mx-auto flex w-full max-w-4xl flex-col items-center gap-8 px-6 text-center">
-          <p className="text-lg font-medium italic text-[#016477]">Vamos colaborar?</p>
+          <p className="text-lg font-medium italic text-[#01233c]">Vamos colaborar?</p>
           <h3 className="text-4xl font-semibold tracking-[-0.02em] text-slate-900 sm:text-[2.8rem]">
             Transformamos sua visão em experiências digitais memoráveis.
           </h3>
@@ -239,13 +239,13 @@ const Projects = () => {
           <div className="mt-4 flex flex-wrap justify-center gap-4">
             <Link
               to="/servicos"
-              className="inline-flex items-center rounded-full border border-[#016477] px-8 py-3 text-sm font-semibold text-[#016477] transition-colors hover:bg-[#016477] hover:text-white"
+              className="inline-flex items-center rounded-full border border-[#01233c] px-8 py-3 text-sm font-semibold text-[#01233c] transition-colors hover:bg-[#01233c] hover:text-white"
             >
               Ver nossos serviços
             </Link>
             <Link
               to="/contato"
-              className="inline-flex items-center rounded-full bg-[#016477] px-8 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center rounded-full bg-[#01233c] px-8 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
             >
               Falar com a equipe
             </Link>
@@ -256,7 +256,7 @@ const Projects = () => {
       <div
         className="project-row py-16 sm:py-20 lg:py-28 lg:min-h-screen"
         style={{
-          "--row-background": "#016477",
+          "--row-background": "#01233c",
           "--row-radius": "0px",
           "--row-offset": "0px",
         }}
@@ -275,7 +275,7 @@ const Projects = () => {
             </div>
             <Link
               to="/contato"
-              className="inline-flex items-center justify-center self-start rounded-full border border-white px-10 py-3 text-base font-semibold transition-transform hover:-translate-y-1 hover:bg-white hover:text-[#016477]"
+              className="inline-flex items-center justify-center self-start rounded-full border border-white px-10 py-3 text-base font-semibold transition-transform hover:-translate-y-1 hover:bg-white hover:text-[#01233c]"
             >
               Enviar uma mensagem
               <svg

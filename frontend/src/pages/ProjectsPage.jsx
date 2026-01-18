@@ -7,7 +7,7 @@ const ProjectsPage = () => {
     <div className="bg-white text-slate-900">
       <section
         data-nav-theme="blue"
-        className="relative flex min-h-screen items-center overflow-hidden bg-[#016477] pt-32 pb-24 text-white"
+        className="relative flex min-h-screen items-center overflow-hidden bg-[#01233c] pt-32 pb-24 text-white"
       >
         <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
           <Reveal className="space-y-6 text-center text-white md:space-y-8">

@@ -22,7 +22,7 @@ const ScrollToTopButton = () => {
       type="button"
       onClick={scrollToTop}
       aria-label="Voltar ao topo"
-      className={`fixed bottom-6 right-6 z-50 rounded-full bg-[#016477] p-3 text-white shadow-[0_20px_45px_-18px_rgba(0,77,163,0.6)] transition-all duration-300 hover:bg-[#003a7d] focus:outline-none focus:ring-2 focus:ring-white ${visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
+      className={`fixed bottom-6 right-6 z-50 rounded-full bg-[#01233c] p-3 text-white shadow-[0_20px_45px_-18px_rgba(0,35,60,0.6)] transition-all duration-300 hover:bg-[#01233c] focus:outline-none focus:ring-2 focus:ring-white ${visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-4 opacity-0"
         }`}
     >
       <svg

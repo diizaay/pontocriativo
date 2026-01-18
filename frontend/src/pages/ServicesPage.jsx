@@ -127,7 +127,7 @@ const ServicesPage = () => {
     <div className="services-page bg-white text-slate-900">
       <section
         data-nav-theme="blue"
-        className="relative overflow-hidden bg-[#016477] pt-32 pb-24 text-white"
+        className="relative overflow-hidden bg-[#01233c] pt-32 pb-24 text-white"
       >
         <div className="relative mx-auto w-full max-w-5xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal as="h1" delay={120} className="mt-6 text-[2.7rem] font-semibold leading-[1.34] tracking-[-0.035em] sm:text-[3.2rem]">
@@ -320,7 +320,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      <section data-nav-theme="blue" className="relative overflow-hidden bg-[#016477] py-24 text-white">
+      <section data-nav-theme="blue" className="relative overflow-hidden bg-[#01233c] py-24 text-white">
         <div className="relative mx-auto flex w-full max-w-5xl flex-col items-center gap-8 px-4 text-center sm:px-6 lg:px-8">
           <Reveal className="space-y-6">
             <span className="inline-flex rounded-full border border-white/25 bg-white/10 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white/80">

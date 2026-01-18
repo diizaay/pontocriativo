@@ -25,7 +25,7 @@ const AboutIntro = () => {
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 sm:px-6 lg:px-8">
         <Reveal className="space-y-6">
-          <span className="inline-flex rounded-full border border-[#016477]/20 bg-[#00a3ab]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-[#016477]">
+          <span className="inline-flex rounded-full border border-[#01233c]/20 bg-[#01233c]/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-[#01233c]">
             Sobre nós
           </span>
           <h2 className="text-3xl font-semibold leading-[1.45] tracking-[-0.02em] sm:text-4xl">
@@ -42,10 +42,10 @@ const AboutIntro = () => {
             <Reveal
               key={item.title}
               delay={index * 100}
-              className="rounded-3xl bg-[#016477] p-8 text-white shadow-[0_32px_90px_-60px_rgba(0,77,163,0.45)] transition-transform duration-500 hover:-translate-y-3 hover:bg-[#00a3ab] hover:text-[#016477] reveal-slide-right"
+              className="rounded-3xl bg-[#01233c] p-8 text-white shadow-[0_32px_90px_-60px_rgba(0,35,60,0.45)] transition-transform duration-500 hover:-translate-y-3 hover:bg-[#01233c]/90 hover:text-white reveal-slide-right"
             >
               <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p className="mt-4 text-sm leading-relaxed text-white hover:text-[#016477]">
+              <p className="mt-4 text-sm leading-relaxed text-white hover:text-[#01233c]">
                 {item.description}
               </p>
             </Reveal>

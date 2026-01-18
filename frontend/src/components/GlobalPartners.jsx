@@ -24,7 +24,7 @@ const GlobalPartners = () => {
   return (
     <section
       data-nav-theme="blue"
-      className="relative overflow-hidden bg-[#016477] py-24 text-white md:flex md:min-h-screen md:items-center"
+      className="relative overflow-hidden bg-[#01233c] py-24 text-white md:flex md:min-h-screen md:items-center"
     >
       <div className="relative mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
         <Reveal className="space-y-4 text-center md:text-left">

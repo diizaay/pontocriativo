@@ -15,11 +15,11 @@ const navThemes = {
   blue: {
     base: "bg-transparent border-b border-transparent text-white",
     solid:
-      "bg-[#016477]/92 border-b border-white/15 text-white shadow-[0_20px_40px_-24px_rgba(0,0,0,0.45)] backdrop-blur-md",
+      "bg-[#01233c]/92 border-b border-white/15 text-white shadow-[0_20px_40px_-24px_rgba(0,0,0,0.45)] backdrop-blur-md",
     link: "text-white/70 hover:text-white",
     linkActive: "text-white",
-    button: "bg-white text-[#016477] shadow-[0_20px_48px_-22px_rgba(255,255,255,0.55)]",
-    mobileBg: "bg-[#016477]",
+    button: "bg-white text-[#01233c] shadow-[0_20px_48px_-22px_rgba(255,255,255,0.55)]",
+    mobileBg: "bg-[#01233c]",
     icon: "bg-white",
   },
   white: {
@@ -28,7 +28,7 @@ const navThemes = {
       "bg-white/92 border-b border-slate-200 text-slate-900 shadow-[0_16px_40px_-24px_rgba(15,23,42,0.18)] backdrop-blur-md",
     link: "text-slate-500 hover:text-slate-900",
     linkActive: "text-slate-900",
-    button: "bg-[#016477] text-white shadow-[0_18px_36px_-18px_rgba(1,100,119,0.5)]",
+    button: "bg-[#01233c] text-white shadow-[0_18px_36px_-18px_rgba(1,35,60,0.5)]",
     mobileBg: "bg-white",
     icon: "bg-slate-900",
   },
@@ -38,18 +38,18 @@ const navThemes = {
       "bg-[#00a3ab]/90 border-b border-white/20 text-white shadow-[0_20px_48px_-30px_rgba(0,0,0,0.35)] backdrop-blur-md",
     link: "text-white/80 hover:text-white",
     linkActive: "text-white",
-    button: "bg-[#016477] text-white shadow-[0_18px_36px_-18px_rgba(1,100,119,0.4)]",
-    mobileBg: "bg-[#00a3ab]",
+    button: "bg-[#01233c] text-white shadow-[0_18px_36px_-18px_rgba(1,35,60,0.4)]",
+    mobileBg: "bg-[#01233c]",
     icon: "bg-white",
   },
   navy: {
     base: "bg-transparent border-b border-transparent text-white",
     solid:
-      "bg-[#016477]/92 border-b border-white/15 text-white shadow-[0_20px_48px_-30px_rgba(0,0,0,0.35)] backdrop-blur-md",
+      "bg-[#01233c]/92 border-b border-white/15 text-white shadow-[0_20px_48px_-30px_rgba(0,0,0,0.35)] backdrop-blur-md",
     link: "text-white/70 hover:text-white",
     linkActive: "text-white",
     button: "bg-white text-[#016477] shadow-[0_20px_48px_-22px_rgba(255,255,255,0.45)]",
-    mobileBg: "bg-[#016477]",
+    mobileBg: "bg-[#01233c]",
     icon: "bg-white",
   },
 };

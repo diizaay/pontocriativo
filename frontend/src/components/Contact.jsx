@@ -70,7 +70,7 @@ const Contact = () => {
       <button
         type="button"
         onClick={handleClose}
-        className="absolute right-6 top-6 flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition-colors hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#016477]/40 sm:right-10 sm:top-10"
+        className="absolute right-6 top-6 flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition-colors hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#01233c]/40 sm:right-10 sm:top-10"
         aria-label="Fechar página de contato"
       >
         <svg
@@ -89,7 +89,7 @@ const Contact = () => {
 
       <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="space-y-4 text-left">
-          <span className="text-xs font-semibold uppercase tracking-[0.34em] text-[#016477]">
+          <span className="text-xs font-semibold uppercase tracking-[0.34em] text-[#01233c]">
             Fale conosco
           </span>
           <h1 className="text-[clamp(2.6rem,9vw,4rem)] font-semibold leading-[1.35] tracking-[-0.02em] text-slate-900">
@@ -107,7 +107,7 @@ const Contact = () => {
               value={formData.name}
               onChange={handleChange}
               placeholder="Nome completo *"
-              className="h-14 rounded-none border-0 border-b border-slate-300 bg-transparent px-0 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#016477] focus-visible:ring-0"
+              className="h-14 rounded-none border-0 border-b border-slate-300 bg-transparent px-0 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#01233c] focus-visible:ring-0"
             />
             <Input
               id="email"
@@ -117,7 +117,7 @@ const Contact = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email *"
-              className="h-14 rounded-none border-0 border-b border-slate-300 bg-transparent px-0 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#016477] focus-visible:ring-0"
+              className="h-14 rounded-none border-0 border-b border-slate-300 bg-transparent px-0 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#01233c] focus-visible:ring-0"
             />
             <Input
               id="phone"
@@ -127,7 +127,7 @@ const Contact = () => {
               value={formData.phone}
               onChange={handleChange}
               placeholder="Telefone *"
-              className="h-14 rounded-none border-0 border-b border-slate-300 bg-transparent px-0 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#016477] focus-visible:ring-0"
+              className="h-14 rounded-none border-0 border-b border-slate-300 bg-transparent px-0 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#01233c] focus-visible:ring-0"
             />
             <Input
               id="company"
@@ -137,7 +137,7 @@ const Contact = () => {
               value={formData.company}
               onChange={handleChange}
               placeholder="Empresa *"
-              className="h-14 rounded-none border-0 border-b border-slate-300 bg-transparent px-0 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#016477] focus-visible:ring-0"
+              className="h-14 rounded-none border-0 border-b border-slate-300 bg-transparent px-0 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#01233c] focus-visible:ring-0"
             />
           </div>
 
@@ -149,13 +149,13 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             placeholder="Detalhe objetivos, desafios e prazos *"
-            className="rounded-none border-0 border-b border-slate-300 bg-transparent px-0 pb-6 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#016477] focus-visible:ring-0"
+            className="rounded-none border-0 border-b border-slate-300 bg-transparent px-0 pb-6 text-lg font-medium text-slate-900 placeholder:text-slate-400 focus-visible:border-[#01233c] focus-visible:ring-0"
           />
 
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="group inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-[#016477] px-10 text-sm font-semibold uppercase tracking-[0.32em] text-white transition-transform hover:-translate-y-0.5 hover:bg-[#003a82] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#016477]/30 sm:w-auto"
+            className="group inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-[#01233c] px-10 text-sm font-semibold uppercase tracking-[0.32em] text-white transition-transform hover:-translate-y-0.5 hover:bg-[#003a82] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#01233c]/30 sm:w-auto"
           >
             {isSubmitting ? "Enviando..." : "Enviar mensagem"}
             <svg

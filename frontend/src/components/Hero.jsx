@@ -21,7 +21,7 @@ const Hero = () => {
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 to="/contato"
-                className="inline-flex items-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-[#016477] shadow-[0_24px_48px_-18px_rgba(0,0,0,0.35)] transition-transform hover:-translate-y-0.5"
+                className="inline-flex items-center rounded-full bg-white px-8 py-3 text-sm font-semibold text-[#01233c] shadow-[0_24px_48px_-18px_rgba(0,0,0,0.35)] transition-transform hover:-translate-y-0.5"
               >
                 Falar com especialistas
               </Link>

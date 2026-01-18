@@ -32,7 +32,7 @@ const WorkflowSection = () => {
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-14 px-4 text-center sm:px-6 lg:px-8">
         <Reveal className="max-w-3xl space-y-4 text-center">
-          <span className="inline-flex rounded-full border border-slate-200 bg-white px-6 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#016477]">
+          <span className="inline-flex rounded-full border border-slate-200 bg-white px-6 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#01233c]">
             Como trabalhamos
           </span>
           <h2 className="text-3xl font-semibold leading-[1.45] tracking-[-0.02em] text-slate-900 sm:text-4xl">

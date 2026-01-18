@@ -67,9 +67,9 @@ const StatsSection = () => {
     >
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-4 sm:px-6 lg:px-8">
         <Reveal className="space-y-6">
-          <div className="h-1 w-16 rounded-full bg-[#016477]" />
+          <div className="h-1 w-16 rounded-full bg-[#01233c]" />
           <div className="space-y-4">
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#016477]/70">
+            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#01233c]/70">
               Impacto comprovado
             </p>
             <h2 className="text-3xl font-semibold leading-[1.34] tracking-[-0.02em] text-slate-900 sm:text-4xl">
@@ -91,12 +91,12 @@ const StatsSection = () => {
               <Reveal
                 key={stat.label}
                 delay={index * 90}
-                className="group relative flex flex-col items-center overflow-hidden rounded-[32px] border border-[#016477]/10 bg-white px-8 py-12 text-center shadow-[0_30px_80px_-60px_rgba(0,77,163,0.25)] transition-transform duration-500 hover:-translate-y-2"
+                className="group relative flex flex-col items-center overflow-hidden rounded-[32px] border border-[#01233c]/10 bg-white px-8 py-12 text-center shadow-[0_30px_80px_-60px_rgba(0,35,60,0.25)] transition-transform duration-500 hover:-translate-y-2"
               >
-                <div className="absolute inset-0 rounded-[32px] bg-[#016477]/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                <div className="relative flex items-baseline gap-2 text-5xl font-semibold text-[#016477]">
+                <div className="absolute inset-0 rounded-[32px] bg-[#01233c]/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="relative flex items-baseline gap-2 text-5xl font-semibold text-[#01233c]">
                   <span>{formattedValue}</span>
-                  <span className="text-3xl font-semibold text-[#00a3ab]">{stat.suffix}</span>
+                  <span className="text-3xl font-semibold text-[#01233c]">{stat.suffix}</span>
                 </div>
                 <p className="relative mt-5 text-sm font-medium uppercase tracking-[0.24em] text-slate-500">
                   {stat.label}
