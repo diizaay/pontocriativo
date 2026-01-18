@@ -167,7 +167,7 @@ const HomeServicesRail = () => {
                 </div>
 
                 <div className="relative space-y-4">
-                  <h3 className="text-2xl font-semibold leading-[1.38] text-[#01233c]">
+                  <h3 className="text-2xl font-semibold leading-[1.45] text-[#01233c]">
                     {service.title}
                   </h3>
                   <p className="text-sm leading-relaxed text-[#01233c]/80">{service.description}</p>

@@ -92,7 +92,7 @@ const Contact = () => {
           <span className="text-xs font-semibold uppercase tracking-[0.34em] text-[#01233c]">
             Fale conosco
           </span>
-          <h1 className="text-[clamp(2.6rem,9vw,4rem)] font-semibold leading-[1.35] tracking-[-0.02em] text-slate-900">
+          <h1 className="text-[clamp(2.6rem,9vw,4rem)] font-semibold leading-[1.45] tracking-[-0.02em] text-slate-900">
             Fale com a nossa equipe
           </h1>
         </div>

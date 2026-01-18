@@ -139,11 +139,11 @@ const Projects = () => {
               const accentBg = isEven ? "#ffffff" : "#01233c";
               const textPrimary = isEven ? "text-[#01233c]" : "text-white";
               const textSecondary = isEven ? "text-[#01233c]/80" : "text-white/80";
-              const numberTone = isEven ? "text-[#01233c]/60" : "text-white/70";
+              const numberTone = "text-[#00a3ab]";
               const dividerTone = isEven ? "bg-[#01233c]/15" : "bg-white/30";
               const tagTone = isEven
-                ? "rounded-full bg-[#01233c]/10 px-4 py-2 text-xs font-medium text-[#01233c]"
-                : "rounded-full bg-white/20 px-4 py-2 text-xs font-medium text-white";
+                ? "rounded-full bg-[#01233c]/10 px-4 py-2 text-xs font-medium text-[#00a3ab]"
+                : "rounded-full bg-white/20 px-4 py-2 text-xs font-medium text-[#00a3ab]";
               const resultsTone = isEven ? "text-sm font-semibold text-[#01233c]" : "text-sm font-semibold text-white";
               const ctaTone = isEven
                 ? "inline-flex items-center gap-2 text-sm font-semibold text-[#01233c] transition-colors hover:text-[#0b2a68]"
@@ -229,7 +229,7 @@ const Projects = () => {
       <div className="project-row py-16 sm:py-20" style={{ "--row-background": "#ffffff" }}>
         <Reveal className="mx-auto flex w-full max-w-4xl flex-col items-center gap-8 px-6 text-center">
           <p className="text-lg font-medium italic text-[#01233c]">Vamos colaborar?</p>
-          <h3 className="text-4xl font-semibold tracking-[-0.02em] text-[#01233c] sm:text-[2.8rem]">
+          <h3 className="text-4xl font-semibold leading-[1.45] tracking-[-0.02em] text-[#01233c] sm:text-[2.8rem]">
             Transformamos sua visão em experiências digitais memoráveis.
           </h3>
           <p className="max-w-3xl text-base leading-relaxed text-[#01233c]/80">
@@ -265,7 +265,7 @@ const Projects = () => {
           <Reveal className="space-y-6 text-left">
             <div className="space-y-4">
               <p className="text-sm font-semibold uppercase tracking-[0.26em] text-white/75">Diga ola</p>
-              <h3 className="text-4xl font-semibold leading-[1.34] sm:text-[2.9rem]">
+              <h3 className="text-4xl font-semibold leading-[1.45] sm:text-[2.9rem]">
                 Pronto para criar algo extraordinario com a gente?
               </h3>
               <p className="max-w-xl text-base leading-relaxed text-white/80">
