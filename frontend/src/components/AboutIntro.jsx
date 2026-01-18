@@ -45,7 +45,7 @@ const AboutIntro = () => {
               className="rounded-3xl bg-[#01233c] p-8 text-white shadow-[0_32px_90px_-60px_rgba(0,35,60,0.45)] transition-transform duration-500 hover:-translate-y-3 hover:bg-[#01233c]/90 hover:text-white reveal-slide-right"
             >
               <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p className="mt-4 text-sm leading-relaxed text-white hover:text-[#01233c]">
+              <p className="mt-4 text-sm leading-relaxed text-white group-hover:text-white/90">
                 {item.description}
               </p>
             </Reveal>

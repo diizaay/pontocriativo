@@ -31,7 +31,7 @@ const GlobalPartners = () => {
           <span className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-white/70 backdrop-blur">
             Parcerias globais
           </span>
-          <h2 className="max-w-[720px] text-3xl font-semibold leading-[1.32] tracking-[-0.02em] text-white sm:text-4xl">
+          <h2 className="max-w-[720px] text-3xl font-semibold leading-[1.45] tracking-[-0.02em] text-white sm:text-4xl">
             Mais de 30 marcas confiam na CriaTec para lançar e evoluir experiências digitais de alto impacto.
           </h2>
         </Reveal>

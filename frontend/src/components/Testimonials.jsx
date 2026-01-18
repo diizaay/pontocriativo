@@ -15,18 +15,18 @@ const Testimonials = () => {
   return (
     <section
       data-nav-theme="white"
-      className="bg-white py-24 text-slate-900 md:flex md:min-h-screen md:items-center"
+      className="bg-white py-24 text-[#01233c] md:flex md:min-h-screen md:items-center"
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 sm:px-6 lg:px-8">
         <Reveal className="space-y-6">
           <span className="inline-flex rounded-full border border-[#01233c]/20 bg-[#01233c]/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#01233c]">
             Depoimentos
           </span>
-          <h2 className="text-4xl font-semibold leading-[1.4] tracking-[-0.03em] sm:text-5xl">{title}</h2>
+          <h2 className="text-4xl font-semibold leading-[1.45] tracking-[-0.03em] sm:text-5xl">{title}</h2>
         </Reveal>
 
         <Reveal delay={180} className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-center">
-          <p className="text-lg leading-relaxed text-slate-600">"{active.content}"</p>
+          <p className="text-lg leading-relaxed text-[#01233c]/80">"{active.content}"</p>
           <div className="flex flex-col items-center gap-4 text-center">
             <img src={active.avatar} alt={active.name} className="h-28 w-28 rounded-full object-cover" />
             <div>
